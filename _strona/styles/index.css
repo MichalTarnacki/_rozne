@@ -1,0 +1,77 @@
+figure{display: flex;
+align-items: center;
+justify-content: center;
+margin: auto;}
+figcaption{
+  padding: 0;
+  margin-left: 8px;
+}
+li::first-line{
+  font-weight:800;
+}
+.main-image{
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: block;
+border: 5px solid black;
+border-radius: 10px;
+}
+.setuser-loading{
+	height:45px;
+  animation-name:spin;
+  animation-duration:5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function:ease-in-out;
+}
+@keyframes spin {
+  from{transform: rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+@media all and (min-width:1200px){
+figure{
+  margin: 5px;
+}
+.main-image{
+  display: block;
+  padding: 0;
+  width: 650px;}
+}
+@media all and (min-width:1000px) and (max-width:1199px){
+figure{
+  margin: 5px;
+}
+  .main-image{
+    display: block;
+    padding: 0;
+    width: 650px;}
+}
+@media all and (min-width:760px) and (max-width:999px){
+figure{
+  margin: auto;
+  display: block;
+  left: 0;
+  right: 0;
+}
+figcaption{
+  margin: 5px;
+}
+.main-image{
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  right: 0;
+  height: 65vw;}
+}
+@media all and (max-width:759px){
+figure{
+  left: 0;
+  margin: 2%;
+  display: block;
+}
+.main-image{
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+  border:3px solid black;}
+}

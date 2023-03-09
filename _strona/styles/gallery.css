@@ -1,0 +1,27 @@
+.gallery{
+  margin:10px;
+height:200px;
+border: 5px solid black;
+border-radius: 10px;
+}
+.gallerydiv{
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+.gallery:active{
+  transform: scale(2.3);
+  -webkit-transform: scale(2.3);
+  -moz-transform: scale(2.3);
+  transition-duration: 1s;
+  z-index: 3;
+}
+
+
+
+
+@media all and (max-width:759px){
+.gallery{
+border: 3px solid black;}
+}

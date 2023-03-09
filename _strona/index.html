@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <title> Moje hobby </title>
+  <script src="scripts/script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body onload="cookies(),mobilemenushow()">
+  <div id="cookies">
+Wyrażam zgodę na śledzenie oraz zapisywanie plików lokalnych <br/> <button onclick="hide()" class="button">TAK</button> / <button onclick="nocookies()" class="button">NIE</button>
+  </div>
+  <div class="container">
+
+      <div id="top-bar"> </div>
+      <div id="social-media-bar">
+        <a href="https://www.facebook.com" target="_blank"><img class="social-media-button-img" src="gallery/src/fb-button.png" alt="facebook-button"/></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="social-media-button-img" src="gallery/src/ig-button.png" alt="instagram-button"/></a>
+        <a href="https://www.youtube.com" target="_blank"><img class="social-media-button-img" src="gallery/src/yt-button.png" alt="youtube-button"/></a>
+       </div>
+      <div class="small-bar"></div>
+    <header>
+     Moje hobby - Gotowanie
+     <img class="setuser-loading" src="gallery/src/pizza.png" alt="kręcąca się pizza"/>
+   </header>
+   <div class="small-bar"> </div>
+   <div id="mobile-menu">
+     <br/>
+     <button class="mobile-menu-button"  onclick="mobilemenu()"> <img class="mobile-menu-button-img" src="gallery/src/menu-button.ico" alt="rozwin menu"/> </button>
+    <br/> <br/>
+     <div class="small-bar"></div>
+   </div>
+   <nav id="nav">
+   <table style="width:100%">
+     <tr>
+    <td> <a class="navigationactive" href="index.html">Strona Głowna</a></td>
+    <td> <a class="navigation" href="przepisy.html">Przepisy</a></td>
+    <td><a class="navigation" href="galeria.html">Galeria</a></td>
+    <td><a class="navigation" href="o_mnie.html">O mnie</a></td>
+    <td><a class="navigation" href="forum.html">Forum</a></td>
+  </tr>
+  </table>
+  <div class="small-bar"></div>
+</nav>
+    <main>
+      <br/>
+    <figure>
+  <img class="main-image" src="gallery/main/czeladnicy.jpg" alt="Ja i Kasia z certyfikatem rogalowego czeladnika"/>
+<figcaption>
+  <h1>Dzień dobry!</h1> Słowem wstępu...
+      <h2>Oto strona poświęcona mojemu hobby</h2> czyli jedzeniu oraz gotowaniu
+      <h3> Możesz na niej </h3>
+      <ul>
+        <li> Sprawdzić moje autorskie oraz polecane przeze mnie przepisy używając zakładki "przepisy" </li>
+        <li> Zobaczyć galerię przyrządocznych potraw oraz zdjęcia posiłów restauracyjnych używając zakładki "galeria"</li>
+        <li> Przeczytać informacje o mnie używając zakładki "o mnie"</li>
+        <li> Wziąć udział w dyskusji na forum lub poczytać aktualne wątki używając zakładki "forum"</li>
+      </ul>
+    </figcaption>
+    </figure>
+    <br/>
+    </main>
+    <div id="bot-bar"></div>
+<footer>
+  <a  class="footer">Michał Tarnacki INF 2021</a>
+</footer>
+    </div>
+
+</body>
+</html>

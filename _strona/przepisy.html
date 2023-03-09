@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/przepisy.css">
+  <link rel="stylesheet" href="styles/jquery-ui.min.css">
+  <title> Moje hobby </title>
+  <script src="scripts/script.js"></script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+    <script src="scripts/turn.min.js"></script>
+    <script>
+    window.addEventListener("resize", function(){
+  if(window.matchMedia("(min-width:999px)").matches){
+    document.getElementById("przepisy").style.display="block";
+    document.getElementById("constructiondiv").style.display="none";
+  }
+  else{ document.getElementById("przepisy").style.display="none";
+    document.getElementById("constructiondiv").style.display="block";}
+})
+    $(function(){$("#flipbook").turn()});
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+</head>
+<body onload="showrecipes(),mobilemenushow(),cookies(),timesseen()">
+  <div id="cookies">
+Wyrażam zgodę na śledzenie oraz zapisywanie plików lokalnych <br/> <button onclick="hide()" class="button">TAK</button> / <button onclick="nocookies()" class="button">NIE</button>
+  </div>
+  <div class="container">
+      <div id="top-bar"> </div>
+      <div id="social-media-bar">
+        <a href="https://www.facebook.com" target="_blank"><img class="social-media-button-img" src="gallery/src/fb-button.png" alt="facebook-button"/></a>
+        <a href="https://www.instagram.com" target="_blank"><img class="social-media-button-img" src="gallery/src/ig-button.png" alt="instagram-button"/></a>
+        <a href="https://www.youtube.com" target="_blank"><img class="social-media-button-img" src="gallery/src/yt-button.png" alt="youtube-button"/></a>
+       </div>
+      <div class="small-bar"></div>
+    <header>
+     Moje hobby - Gotowanie
+   </header>
+   <div class="small-bar"> </div>
+   <div id="mobile-menu">
+     <br/>
+     <button class="mobile-menu-button"  onclick="mobilemenu()"> <img class="mobile-menu-button-img" src="gallery/src/menu-button.ico" alt="rozwin menu"/> </button>
+    <br/> <br/>
+     <div class="small-bar"></div>
+   </div>
+   <nav id="nav">
+   <table style="width:100%">
+     <tr>
+    <td> <a class="navigation" href="index.html">Strona Głowna</a></td>
+    <td> <a class="navigationactive" href="przepisy.html">Przepisy</a></td>
+    <td><a class="navigation" href="galeria.html">Galeria</a></td>
+    <td><a class="navigation" href="o_mnie.html">O mnie</a></td>
+    <td><a class="navigation" href="forum.html">Forum</a></td>
+  </tr>
+  </table>
+  <div class="small-bar"></div>
+</nav>
+    <main id="main">
+      <div id="przepisy">
+      <br/>
+      <div id="flipbook">
+  	<div class="hard">
+      <div class="framehard">
+      <h1>Niewielka księga <br/> PRZEPISÓW</h1>
+       <img class="image" src="gallery/recipes/popcorn.png" alt="popcorn"/>
+     </div>
+    </div>
+  	<div class="hard">
+      <div class="framehard"> </div>
+    </div>
+  	<div class="soft"><div class="frame">
+      <br/>
+      <img class="image2" src="gallery/recipes/cook.png" alt="czapka kucharska"/>
+ <h2>Oto książka z moimi przepisami</h2>
+    Aktualnie znajdziesz w niej przepisy na:
+    <ul>
+    <li>Pyry z gzikiem </li>
+    <li>Makaron z sosem bolognese </li>
+    <li>Pizzę neapolitańską </li>
+     </ul>
+      </div></div>
+  	<div class="soft">
+      <div class="frame">
+        <h2>Pyry z gzikiem</h2>
+        <img class="image2" src="gallery/recipes/pyry.jpeg" alt="ziemniaczki"/>
+        <h3>Składniki:</h3>
+        <ul>
+          <li>Ziemniaki 350g</li>
+          <li>Śmietana 18%</li>
+          <li>Twaróg tłusty 400g</li>
+          <li>Rzodkiewka 2 szt.</li>
+          <li>Szczypiorek 1szt</li>
+          <li>Sól/Pieprz do smaku</li>
+        </ul>
+      </div>
+    </div>
+  	<div class="soft">
+      <div class="frame">
+        <h3>Opis:</h3>
+        <ol>
+          <li>Ziemniaki dokładnie myjemy, gdyż gotować je będziemy w mundurkach</li>
+          <li>Wkładamy do garnka z osoloną wodą, gotujemy do miękkości (średnie ziemniaki ok.15min)</li>
+          <li>W tym czasie robimy gzik:
+            <ul>
+              <li>Rzodkiewkę kroimy w kostkę, szczypiorek na małe kawałki w poprzeg</li>
+              <li>Wkładamy je do miski razem ze śmietaną i twarogiem</li>
+              <li>Całość ugniatamy widelcem do uzyskania możliwie gładkiej masy</li>
+            </ul>
+          </li>
+          <li>Po ugotowaniu ziemiaków te wykładamy razem z gzikiem, delektujemy się smakiem</li>
+        </ol>
+      </div>
+    </div>
+  	<div class="soft">
+      <div class="frame">
+         <h2>Makaron z sosem bolognese</h2>
+         <img class="image2" src="gallery/recipes/makaron.png" alt="makaron"/>
+         <h3>Składniki:</h3>
+         <ul>
+           <li>Makaron o dowolnym kształcie 120g</li>
+           <li>Mielona wieprzowina 500g</li>
+           <li>Marchewka ok. 3 średnie sztuki</li>
+           <li>Seler 0.5szt</li>
+           <li>Pomidory w puszcze 1szt</li>
+           <li>Cebula 1szt</li>
+           <li>Czosek</li>
+           <li>Liść laurowy 2szt</li>
+           <li>Ziele angielskie 3szt</li>
+           <li>Korzeń pietruszki 1szt</li>
+           <li>Oliwa z oliwek</li>
+         </ul>
+        </div>
+      </div>
+    <div class="soft"><div class="frame">
+      <h3>Opis:</h3>
+      <ol>
+        <li>Wszystkie warzywa kroimy na drobne kosteczki kawałki</li>
+        <li>Rozgrzewamy w garnku niedużą ilość oliwy, na niewielkim ogniu smażymy warzywa</li>
+        <li>Po około 5-ciu minutach wrzucamy mięso i smażymy do odparowania jego soków</li>
+        <li>Dodajemy pomidory z puszki, liść laurowy, ziele angielskie </li>
+        <li>Dolewamy nieco wody (należy uważać żeby nie dolać za dużo!), całość gotujemy ok 30min</li>
+        <li>Gdy sos się zagęści gotujemy makaron wedłyg instrukcji na opakowaniu</li>
+        <li>Gotowy makaron mieszamy z sosem, jemy z apetytem</li>
+      </ol>
+     </div>
+   </div>
+    <div class="soft"> <div class="frame">
+       <h2>Pizza Neapolitańska</h2>
+       <img class="image2" src="gallery/recipes/pizza.png" alt="pizza"/>
+       <h3>Składniki:</h3>
+       <ul>
+         <li>Mąka Tipo 00 500g</li>
+         <li>Szczypta drożdży (ok.2g)</li>
+         <li>Woda 330ml</li>
+         <li>Sól 20g</li>
+         <li>Kasza manna</li>
+         <li>Ulubione składniki</li>
+       </ul>
+      </div>
+     </div>
+    <div class="soft">
+      <div class="frame">
+        <h3>Opis:</h3>
+        <ol>
+          <li>Wodę nieco podrzewamy, tak aby była ciepła lecz nie gorąca (tak aby nie zabić drozdży)</li>
+          <li>Dokładnie rozpuszamy w niej sól</li>
+          <li>Dosypujemy drożdże aktywnie mieszając</li>
+          <li>Na stolnicy rozsypujemy mąkę, robiąc z niej kopiec </li>
+          <li>Powoli dolewając wodę ugniatamy ciasto do momentu aż przestanie się kleić do dłoni (powinno być jednak miękkie)</li>
+          <li>Ugniecione ciasto odkładamy do wyrośnięcia na co najmniej godzinę</li>
+          <li>Po wyrośnięciu rozciągamy rękoma (nie rozwałkowujemy!!!)</li>
+          <li>Deskę posypujemy kaszą manną, kładziemy ciasto i układamy ulubione składniki, w tym czasie nagrzewając piekarnik do maksymalnej temperatury</li>
+          <li>Pizzę zrzucamy z deski do piekarnika, pieczemy do momentu zarumienienia brzegów</li>
+          <li>Cieszymy się że zrobiliśmy pyszną pizzę</li>
+        </ol>
+       </div>
+     </div>
+    <div class="soft"><div class="frame"><br/><img style="width:90%" src="gallery/recipes/riddle.png" alt="labirynt"/> ZAGADKA</div> </div>
+  	<div class="hard">  <div class="framehard"> </div></div>
+  	<div class="hard">  <div class="framehard"> </div></div>
+  </div>
+  <script>
+  if(window.localStorage){
+  document.write("Liczba wyświetleń na tej przeglądarce:" + (Number(localStorage.getItem("timesseen"))+1));
+}
+  </script>
+  <br/>
+</div>
+<div id="constructiondiv">
+<img class="construction" src="gallery/src/under-construction.png" alt="strona w przebudowie"/>
+</div>
+    </main>
+    <div id="bot-bar"></div>
+<footer>
+  <a  class="footer">Michał Tarnacki INF 2021</a>
+</footer>
+    </div>
+
+</body>
+</html>
